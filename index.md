@@ -20,6 +20,10 @@ layout: default
 </body>
 </html>
 
+\hat{XX}, $\hat{XX}$
+<p>
+  \hat{XX}
+</p>
 
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
