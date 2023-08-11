@@ -2,15 +2,13 @@
 layout: default
 ---
 
-> * Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
-> * For equations that reference formulas within the paper (with numbers less than 38), please refer to the content of the article. 
-> * New equations on this webpage start from equation 38.
+> * Please note that the **indices of the equations** below are based on the conference paper [FITS: Matching Camera Fingerprints Subject to Software Noise Pollution](https://www.sigsac.org/ccs/CCS2023/index.html) of ACM CCS 2023. 
+> * For equations that reference formulas within the paper (with numbers **less than 38**), please refer to the content of the paper. 
+> * New equations on this webpage **start from equation 38**.
 
-```
-* Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
-* For equations that reference formulas within the paper (with numbers less than 38), please refer to the content of the article. 
-* New equations on this webpage start from equation 38.
-```
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+[Link to another page](./another-page.html).
 
 <html>
   <head>
@@ -22,6 +20,10 @@ layout: default
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
   </head>
+</html>
+
+## 0.Some Definitions
+<html>
   <body>
     <p>
       For images polluted by software noise, the extracted noise residual \(\widehat{\mathbf{K}}\) can be expressed as the sum of three components:
@@ -37,7 +39,6 @@ layout: default
     </p>
   </body>
 </html>
-
 
 ## 1.Detailed explanation of FITS_CC
 <html>
@@ -328,7 +329,7 @@ The equation can be written as follows,
 </html>
 
 
-### 2-1.1111
+<!-- ### 2-1.1111
 
 <html>
   <body>
@@ -463,7 +464,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+``` -->
 
 
 <!-- <script>
