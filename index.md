@@ -13,18 +13,20 @@ layout: default
   </script>
 </head>
 <body>
-<p>
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-</p>
+  <p>
+    For images polluted by software noise, the extracted noise residual \(\widehat{\mathbf{K}}\) can be expressed as the sum of three components:
+  </p>
+  <p>
+    \(\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi},\)
+  </p>
+  <p>
+    where \(\mathbf{K}), \(\mathbf{S}), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients $\alpha$ and $\beta$ before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
+  <\p>
 </body>
-
-when \(\widehat{\mathbf{K}}_Q\) is not \(\varphi_(QR)\) is a num \(\hat{XXX}\)
-
 </html>
 
 # About FITS-CC algorithm
-the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
