@@ -51,7 +51,7 @@ layout: default
             + \beta_Q \mathbf{S}_{Q_m}\odot \xi_{Rm}
             + \alpha_R \xi_{Qm} \odot \mathbf{K}_{Rm}
             + \beta_R \xi_{Qm} \odot \mathbf{S}_{Rm}
-            + \xi_{Qm} \odot \xi_{Rm}]\.
+            + \xi_{Qm} \odot \xi_{Rm}\].
     </p>
   </body>
 </html>
@@ -99,8 +99,37 @@ layout: default
   </body>
 </html>
 
+### 1-2.hahaha
+<html>
+  <body>
+    <p>
+    \begin{equation}
+    \operatorname{FITS\_CC_1} \approx
+    \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
+    + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
+    - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+    \label{eq:CC_Sub}
+    \end{equation}
+    </p>
+  </body>
+</html>
 
-
+### 1-3.hahahalalalala
+<html>
+  <body>
+    <p>
+    \[
+    \begin{equation}
+    \operatorname{FITS\_CC_1} \approx
+    \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
+    + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
+    - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+    \label{eq:CC_Sub}
+    \end{equation}
+    \]
+    </p>
+  </body>
+</html>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
