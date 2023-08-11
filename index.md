@@ -157,25 +157,56 @@ According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC
 </html>
 
 ### 2-1.Using Subtraction to calculate FITS_NCC
-
+The equation is given as follows,
 <html>
   <body>
     <p>
-      The equation is given as follows,
-    </p>
-    <p>
       \begin{equation}
+      \begin{split}
         \operatorname{FITS\_NCC_1} =  \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) - \operatorname{NCC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_Z) 
         \\ = \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
                 {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|} - 
-         \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
+          \\ \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
                 {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
-        \
+          \\ \
+      \end{split}
+      \end{equation}
+    </p>
+    <p>
+      We ignore zero-mean random noises \(\varphi_{QR}\), \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\), and \(\varphi_{QZ}\), and have:
+    </p>
+    <p>
+      \begin{equation}
+        $\operatorname{FITS\_NCC_1} \approx$
+        \frac{\left\| \widehat{\mathbf{K}}_{Zm} \right\|
+              (\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}+ \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm})
+        - \left\| \widehat{\mathbf{K}}_{Rm} \right\|
+              \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}
+            {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
       \end{equation}
     </p>
   </body>
 </html>
 
+### 2-2.Using Division to calculate FITS_NCC
+The equation is given as follows,
+<html>
+  <body>
+    <p>
+      \begin{equation}
+      \begin{split}
+      \operatorname{FITS\_NCC_2} &= 
+      \frac{\operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}{\operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)}
+      \\ &= \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\| ( \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR})}
+      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| (\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ})}.
+      \end{split}
+      \end{equation}
+    </p>
+    <p>
+      After ignoring \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) and other random noises, we then have:
+    </p>
+  </body>
+</html>
 
 
 ### 2-1.1111
