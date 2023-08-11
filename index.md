@@ -20,12 +20,8 @@ layout: default
 </body>
 </html>
 
-\hat{XX}, $\hat{XX}$
-<p>
-  \hat{XX}
-</p>
 
-when <p>\hat{XX}</p> is a num
+when \(\hat{X}), \(\hat{XX}) is a num \(\longhat{XXX})
 
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
