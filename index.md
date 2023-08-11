@@ -48,8 +48,10 @@ layout: default
       \[\varphi_{QR} = \alpha_Q \beta_R \mathbf{K}_{Qm} \odot \mathbf{S}_{Rm}
             + \alpha_Q \mathbf{K}_{Qm} \odot \xi_{Rm} 
             + \beta_{Q} \alpha_{R} \mathbf{S}_{Qm} \odot \mathbf{K}_{Rm}\\
-            + \beta_Q \mathbf{S}_{Q_m}\odot \xi_{Rm}
-            + \alpha_R \xi_{Qm} \odot \mathbf{K}_{Rm}
+            + \beta_Q \mathbf{S}_{Q_m}\odot \xi_{Rm}\]
+    </p>
+    <p>
+      \[+ \alpha_R \xi_{Qm} \odot \mathbf{K}_{Rm}
             + \beta_R \xi_{Qm} \odot \mathbf{S}_{Rm}
             + \xi_{Qm} \odot \xi_{Rm}\].
     </p>
@@ -71,9 +73,10 @@ layout: default
     </p>
     <p>
       \[\operatorname{FITS\_CC_1} = \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) 
-      - \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)
+      - \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)\]
     </p>
     <p>
+      \[
       = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
       - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}
@@ -124,7 +127,6 @@ layout: default
     \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
     + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
     - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-    \label{eq:CC_Sub}
     \end{equation}
     \]
     </p>
