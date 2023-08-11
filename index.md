@@ -227,7 +227,7 @@ The equation is given as follows,
 According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
 <html>
   <body>
-    <p>
+    <!-- <p>
       \begin{equation}
       \begin{split}
           \operatorname{PCE(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)} &= 
@@ -235,7 +235,7 @@ According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
             &= \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
       \end{split}
       \end{equation}
-    </p>
+    </p> -->
     <p>
       \begin{equation}
           \operatorname{PCE(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)} = 
@@ -243,13 +243,32 @@ According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
             = \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
       \end{equation}
     </p>
+  </body>
+</html>
+
+### 3-1.Using Subtraction to Calculate FITS_PCE
+The equation is given as follows,
+<html>
+  <body>
+    <p>
+      \begin{equation}
+      \operatorname{FITS\_PCE_1} = \operatorname{PCE}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_R) - \operatorname{PCE}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)
+      \end{equation}
+      \begin{equation}
+      =\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}
+      -
+      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}},
+      \end{equation}
+    </p>
+    <p>
+      where $\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})$ and $\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})$ are both random noises with similar strength, because the shifted fingerprints $\mathbf{K}_R$ and $\mathbf{K}_Z$ are not correlated with the camera fingerprint $\mathbf{K}_Q$, and these three fingerprints have the same image resolution. 
+      Equation (\ref{eq:PCE_Sub0}) can be simplified as follows,
+    </p>
     <p>
     1
     </p>
   </body>
 </html>
-
-
 
 ### 2-1.1111
 
