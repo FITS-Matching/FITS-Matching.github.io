@@ -67,7 +67,7 @@ layout: default
       \[\widehat{\mathbf{K}}_Z = \alpha_Z \mathbf{K}_Z + \beta_Z \mathbf{S}_Z + \xi_Z\].
     </p>
     <p>  
-      FITS\_CC can be expressed as follows,
+      FITS_CC can be expressed as follows,
     </p>
     <p>
       \[\operatorname{FITS\_CC_1} = \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) 
@@ -76,7 +76,8 @@ layout: default
       = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
       - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}
-      +  \varphi_{QRZ},\]
+      +  \varphi_{QRZ},
+      \end{equation}\]
     </p>
     <p>
       where
