@@ -11,28 +11,6 @@ layout: default
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-    <script>
-      window.onload = function() {
-        var equations = document.querySelectorAll('[id^="equation"]');
-        equations.forEach(function(eq, index) {
-          var equationNumber = index + 1;
-          var equationText = eq.textContent;
-          eq.innerHTML = '<div class="equation">' + equationText + '</div><span class="equation-number">(' + equationNumber + ')</span>';
-        });
-      };
-    </script>
-    <stype>
-      .equation {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-      }
-
-      .equation-number {
-        font-weight: bold;
-        margin-left: 0.5em;
-      }
-    </style>
   </head>
   <body>
     <p>
@@ -500,3 +478,15 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+
+<script>
+  window.onload = function() {
+    var equations = document.querySelectorAll('.equation');
+    equations.forEach(function(eq, index) {
+      var equationNumber = index + 1;
+      var equationText = eq.innerHTML;
+      eq.innerHTML = '<div class="equation">' + equationText + '</div><span class="equation-number">(' + equationNumber + ')</span>';
+    });
+  };
+</script>
