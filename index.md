@@ -21,6 +21,18 @@ layout: default
         });
       };
     </script>
+    <stype>
+      .equation {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .equation-number {
+        font-weight: bold;
+        margin-left: 0.5em;
+      }
+    </style>
   </head>
   <body>
     <p>
