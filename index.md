@@ -7,7 +7,7 @@ This website displays some details about FITS, which are not elaborated in depth
 
 ### Please note:
 > * The **indices of the equations** below are based on the conference paper [FITS: Matching Camera Fingerprints Subject to Software Noise Pollution](https://www.sigsac.org/ccs/CCS2023/index.html) of ACM CCS 2023. 
-> * For equations that reference formulas within the paper (with numbers **less than 38**), please refer to the content of the paper. 
+> * For equations within the paper (with numbers **less than 38**), please refer to the content of the paper. 
 > * New equations on this webpage **start from equation 38**.
 
 <html>
