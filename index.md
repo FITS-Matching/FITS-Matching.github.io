@@ -104,11 +104,21 @@ layout: default
   </body>
 </html>
 
-### 1-2.hahaha
+### 1-2.Using division to calculate FITS_CC:
 <html>
   <body>
     <p>
-1
+      FITS\_CC is the ratio of two CCs:
+    </p>
+    <p>
+      \begin{equation}
+      \begin{split}
+      \operatorname{FITS\_CC_2} &= 
+      \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)}
+      \\ &= \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
+      {\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}.
+      \end{split}
+      \end{equation}
     </p>
   </body>
 </html>
