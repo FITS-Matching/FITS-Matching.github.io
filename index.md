@@ -21,7 +21,7 @@ layout: default
 </html>
 
 
-when \(\hat{X}), \(\hat{XX}) is a num \(\longhat{XXX})
+when \(\hat{X}\), \(\hat{XX}\) is a num \(\longhat{XXX}\)
 
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
