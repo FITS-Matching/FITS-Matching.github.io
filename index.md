@@ -2,7 +2,7 @@
 layout: default
 ---
 
-we propose a **<u>fi</u>ngerprint <u>t</u>o <u>s</u>oftware noise ratio (FITS)** based novel fingerprint matching approaches for fingerprints polluted by software noise. 
+We propose a **<u>fi</u>ngerprint <u>t</u>o <u>s</u>oftware noise ratio (FITS)** based novel fingerprint matching approaches for fingerprints **polluted by software noise**. 
 This website displays some details about FITS, which are not elaborated in depth due to space constraints in our paper of ACM CCS 2023.
 
 ### Please note:
