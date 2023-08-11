@@ -11,13 +11,16 @@ layout: default
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
-        "HTML-CSS": {linebreaks: {automatic: true}},
-        SVG: {linebreaks: {automatic: true}}
-    });
-  </script>
+    <script>
+      window.onload = function() {
+        var equations = document.querySelectorAll('[id^="equation"]');
+        equations.forEach(function(eq, index) {
+          var equationNumber = index + 1;
+          var equationText = eq.textContent;
+          eq.innerHTML = '<div class="equation">' + equationText + '</div><span class="equation-number">(' + equationNumber + ')</span>';
+        });
+      };
+    </script>
   </head>
   <body>
     <p>
@@ -109,6 +112,30 @@ layout: default
       \label{eq:CC_Sub_0}
       \end{equation}
     </p>
+    <div id="equation1">
+      \(\begin{equation}
+      \operatorname{FITS\_CC_1} \approx
+      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
+      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      \end{equation}\)
+    </div>
+    <div id="equation2">
+      \(\begin{equation}
+      \operatorname{FITS\_CC_1} \approx
+      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
+      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      \end{equation}\)
+    </div>
+    <div class="equation">
+      \(\begin{equation}
+      \operatorname{FITS\_CC_1} \approx
+      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
+      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      \end{equation}\)
+    </div>
   </body>
 </html>
 
