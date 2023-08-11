@@ -20,13 +20,13 @@ layout: default
     \[\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi},\]
   </p>
   <p>
-    where \(\mathbf{K}\), \(\mathbf{S}\), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients $\alpha$ and $\beta$ before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
+    where \(\mathbf{K}\), \(\mathbf{S}\), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients \(\alpha\) and \(\beta\) before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
   </p>
   <p>
-    Please note that for the dot product of two matrices: \(mathbf{X} \odot \mathbf{Y} = \sum_{i=1}^{m}\sum_{j=1}^{n} \mathbf{X}[i,j] \mathbf{Y}[i,j]\). If \(\mathbf{X}) isn't correlative with \(\mathbf{Y}), the result behaves as random noise. Since the mean of random noise is statistically close to zero, it can be ignored.
+    Please note that for the dot product of two matrices: \(\mathbf{X} \odot \mathbf{Y} = \sum_{i=1}^{m}\sum_{j=1}^{n} \mathbf{X}[i,j] \mathbf{Y}[i,j]\). If \(\mathbf{X}\) isn't correlative with \(\mathbf{Y}\), the result behaves as random noise. Since the mean of random noise is statistically close to zero, it can be ignored.
   </p>
 
-  # Detailed explanation of \(mathbf{FITS\_CC}\)
+  # Detailed explanation of \(\mathbf{FITS\_CC}\)
   <p>
     According to Equation (\ref{eq:CC}), for a pair of estimated fingerprints \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_R\), the cross correlation (CC) between them can be expressed as follows,
   </p>
