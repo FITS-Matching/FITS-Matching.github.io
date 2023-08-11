@@ -1,14 +1,10 @@
 ---
 layout: default
 ---
-
-> * Please note that the **indices of the equations** below are based on the conference paper [FITS: Matching Camera Fingerprints Subject to Software Noise Pollution](https://www.sigsac.org/ccs/CCS2023/index.html) of ACM CCS 2023. 
+### Please note:
+> * The **indices of the equations** below are based on the conference paper [FITS: Matching Camera Fingerprints Subject to Software Noise Pollution](https://www.sigsac.org/ccs/CCS2023/index.html) of ACM CCS 2023. 
 > * For equations that reference formulas within the paper (with numbers **less than 38**), please refer to the content of the paper. 
 > * New equations on this webpage **start from equation 38**.
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](./another-page.html).
 
 <html>
   <head>
@@ -22,7 +18,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </head>
 </html>
 
-## 0.Some Definitions
+## 1.Some Definitions
 <html>
   <body>
     <p>
@@ -40,7 +36,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </body>
 </html>
 
-## 1.Detailed explanation of FITS_CC
+## 2.Detailed explanation of FITS_CC
 <html>
   <body>
     <p>
@@ -69,7 +65,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </body>
 </html>
 
-### 1-1.Using subtraction to calculate FITS_CC:
+### 2-1.Using subtraction to calculate FITS_CC:
 <html>
   <body>
     <p>
@@ -116,7 +112,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </body>
 </html>
 
-### 1-2.Using division to calculate FITS_CC:
+### 2-2.Using division to calculate FITS_CC:
 <html>
   <body>
     <p>
@@ -143,7 +139,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </body>
 </html>
 
-### 1-3.Discussion
+### 2-3.Discussion
 <html>
   <body>
     <p>
@@ -152,7 +148,7 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
   </body>
 </html>
 
-## 2.Detailed explanation of FITS_NCC
+## 3.Detailed explanation of FITS_NCC
 According to the definition of NCC (Equation (6)), we can rewrite NCC as follows,
 <html>
   <body>
@@ -168,7 +164,7 @@ According to the definition of NCC (Equation (6)), we can rewrite NCC as follows
   </body>
 </html>
 
-### 2-1.Using Subtraction to calculate FITS_NCC
+### 3-1.Using Subtraction to calculate FITS_NCC
 The equation is given as follows,
 <html>
   <body>
@@ -200,7 +196,7 @@ The equation is given as follows,
   </body>
 </html>
 
-### 2-2.Using Division to calculate FITS_NCC
+### 3-2.Using Division to calculate FITS_NCC
 The equation is given as follows,
 <html>
   <body>
@@ -226,7 +222,7 @@ The equation is given as follows,
   </body>
 </html>
 
-### 2-3.Discussion
+### 3-3.Discussion
 <html>
   <body>
     <p>
@@ -235,7 +231,7 @@ The equation is given as follows,
   </body>
 </html>
 
-### 3.Detailed explanation of FITS_PCE
+### 4.Detailed explanation of FITS_PCE
 According to the definition of PCE (Equation (7)), we have:
 <html>
   <body>
@@ -258,7 +254,7 @@ According to the definition of PCE (Equation (7)), we have:
   </body>
 </html>
 
-### 3-1.Using Subtraction to Calculate FITS_PCE
+### 4-1.Using Subtraction to Calculate FITS_PCE
 The equation is given as follows,
 <html>
   <body>
@@ -285,7 +281,7 @@ The equation is given as follows,
   </body>
 </html>
 
-### 3-2.Using Division to Calculate FITS_PCE
+### 4-2.Using Division to Calculate FITS_PCE
 The equation can be written as follows,
 <html>
   <body>
@@ -310,7 +306,7 @@ The equation can be written as follows,
   </body>
 </html>
 
-### 3-3.Discussion
+### 4-3.Discussion
 <html>
   <body>
     <p>
@@ -319,14 +315,15 @@ The equation can be written as follows,
   </body>
 </html>
 
-### 4.Summary
+### 5.Summary
 <html>
   <body>
     <p>
-      For CC, NCC and PCE algorithms, using subtraction to calculate FITS may result in fluctuation of  results, which may degrade the performance of our fingerprint matching algorithm. Instead, using division facilitates threshold choosing and enhances the stability.
+      For CC, NCC and PCE algorithms, using subtraction to calculate FITS may result in fluctuation of  results, which may degrade the performance of our fingerprint matching algorithm. Instead, using **division** facilitates threshold choosing and enhances the stability.
     </p>
   </body>
 </html>
+
 
 
 <!-- ### 2-1.1111
