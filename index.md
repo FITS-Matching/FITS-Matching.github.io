@@ -53,7 +53,7 @@ layout: default
     <p>
       \[+ \alpha_R \xi_{Qm} \odot \mathbf{K}_{Rm}
             + \beta_R \xi_{Qm} \odot \mathbf{S}_{Rm}
-            + \xi_{Qm} \odot \xi_{Rm}\].
+            + \xi_{Qm} \odot \xi_{Rm}.\]
     </p>
   </body>
 </html>
@@ -66,7 +66,7 @@ layout: default
       a new fingerprint \(\widehat{\mathbf{K}}_Z\), which is extracted from images of another device with the same model and post-processing software,
     </p>
     <p>
-      \[\widehat{\mathbf{K}}_Z = \alpha_Z \mathbf{K}_Z + \beta_Z \mathbf{S}_Z + \xi_Z\].
+      \[\widehat{\mathbf{K}}_Z = \alpha_Z \mathbf{K}_Z + \beta_Z \mathbf{S}_Z + \xi_Z.\]
     </p>
     <p>  
       FITS_CC can be expressed as follows,
@@ -87,17 +87,19 @@ layout: default
       where
     </p>
     <p>
-      \[\varphi_{QRZ} = \varphi_{QR} + \varphi_{QZ} - \alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\].
+      \[\varphi_{QRZ} = \varphi_{QR} + \varphi_{QZ} - \alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}.\]
     </p>
     <p>
       Please note that \(\mathbf{K}_{Qm}\) and \(\mathbf{K}_{Zm}\) are hardware fingerprints from different devices. Therefore \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is included in the combination of random noises \(\varphi_{QRZ}\). 
       Since the mean of random noise \(\varphi_{QRZ}\) is statistically close to zero, we ignore \(\varphi_{QRZ}\) and Equation (\ref{eq:CC_Sub_0}) can be further simplified as:
     </p>
     <p>
-      \[\operatorname{FITS\_CC_1} \approx
+      \begin{equation}
+      \operatorname{FITS\_CC_1} \approx
       \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}\].
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      \end{equation}
     </p>
   </body>
 </html>
@@ -106,13 +108,7 @@ layout: default
 <html>
   <body>
     <p>
-    \begin{equation}
-    \operatorname{FITS\_CC_1} \approx
-    \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
-    + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-    - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-    \label{eq:CC_Sub}
-    \end{equation}
+1
     </p>
   </body>
 </html>
@@ -121,14 +117,7 @@ layout: default
 <html>
   <body>
     <p>
-    \[
-    \begin{equation}
-    \operatorname{FITS\_CC_1} \approx
-    \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
-    + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-    - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-    \end{equation}
-    \]
+1
     </p>
   </body>
 </html>
