@@ -25,6 +25,8 @@ layout: default
   \hat{XX}
 </p>
 
+when <p>\hat{XX}</p> is a num
+
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
 
