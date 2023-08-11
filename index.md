@@ -145,17 +145,12 @@ According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC
 <html>
   <body>
     <p>
-      According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC as follows,
-    </p>
-    <p>
       \begin{equation}
-      \begin{split}
-        \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) &= 
+        \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) = 
         \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}
-        {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}\\
-       &=\frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot K_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
+        {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}
+       =\frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot K_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
        {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}. 
-      \end{split}
       \end{equation}
     </p>
   </body>
@@ -170,14 +165,12 @@ According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC
     </p>
     <p>
       \begin{equation}
-      \begin{split}
         \operatorname{FITS\_NCC_1} =  \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) - \operatorname{NCC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_Z) 
         \\ = \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
                 {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|} - 
-          \\ \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
+         \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
                 {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
-          \\ \
-      \end{split}
+        \
       \end{equation}
     </p>
   </body>
