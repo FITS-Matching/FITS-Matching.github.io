@@ -177,7 +177,7 @@ The equation is given as follows,
     </p>
     <p>
       \begin{equation}
-        $\operatorname{FITS\_NCC_1} \approx$
+        \operatorname{FITS\_NCC_1} \approx
         \frac{\left\| \widehat{\mathbf{K}}_{Zm} \right\|
               (\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}+ \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm})
         - \left\| \widehat{\mathbf{K}}_{Rm} \right\|
@@ -261,11 +261,14 @@ The equation is given as follows,
       \end{equation}
     </p>
     <p>
-      where $\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})$ and $\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})$ are both random noises with similar strength, because the shifted fingerprints $\mathbf{K}_R$ and $\mathbf{K}_Z$ are not correlated with the camera fingerprint $\mathbf{K}_Q$, and these three fingerprints have the same image resolution. 
+      where \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})\) and \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})\) are both random noises with similar strength, because the shifted fingerprints \(\mathbf{K}_R\) and \(\mathbf{K}_Z\) are not correlated with the camera fingerprint \(\mathbf{K}_Q\), and these three fingerprints have the same image resolution. 
       Equation (\ref{eq:PCE_Sub0}) can be simplified as follows,
     </p>
     <p>
-    1
+      \begin{equation}
+      \operatorname{FITS\_PCE_1} \approx 
+      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2} - \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
+      \end{equation}
     </p>
   </body>
 </html>
