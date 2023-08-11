@@ -2,8 +2,10 @@
 layout: default
 ---
 
-# FITS-CC algorithm
-the 1st setp is ...... **K** and $\hat{x}$, $\tilde{x}$, $\vec{x}$
+# FITS Matching Algorithm
+
+# About FITS-CC algorithm
+the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
