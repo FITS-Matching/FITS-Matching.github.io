@@ -91,7 +91,7 @@ layout: default
     </p>
     <p>
       Please note that \(\mathbf{K}_{Qm}\) and \(\mathbf{K}_{Zm}\) are hardware fingerprints from different devices. Therefore \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is included in the combination of random noises \(\varphi_{QRZ}\). 
-      Since the mean of random noise \(\varphi_{QRZ}\) is statistically close to zero, we ignore \(\varphi_{QRZ}\) and Equation (\ref{eq:CC_Sub_0}) can be further simplified as:
+      Since the mean of random noise \(\varphi_{QRZ}\) is statistically close to zero, we ignore \(\varphi_{QRZ}\) and Equation (\ref{eq:CC_Sub_0}) can be further simplified as: \eqref{eq:CC_Sub_0}
     </p>
     <p>
       \begin{equation}
@@ -99,6 +99,7 @@ layout: default
       \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
       - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      \label{eq:CC_Sub_0}
       \end{equation}
     </p>
   </body>
