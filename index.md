@@ -98,19 +98,11 @@ layout: default
       \operatorname{FITS\_CC_1} \approx
       \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.   (42)
       \label{eq:CC_Sub_0}
       \end{equation}
     </p>
-    <div id="equation1">
-      \(\begin{equation}
-      \operatorname{FITS\_CC_1} \approx
-      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
-      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-      \end{equation}\)
-    </div>
-    <div id="equation2">
+    <div class="equation">
       \(\begin{equation}
       \operatorname{FITS\_CC_1} \approx
       \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
