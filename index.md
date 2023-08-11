@@ -2,9 +2,15 @@
 layout: default
 ---
 
-> Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
-> For equations that reference formulas within the paper (with numbers less than 39), please refer to the content of the article. 
-> New equations on this webpage start from equation 39.
+> * Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
+> * For equations that reference formulas within the paper (with numbers less than 38), please refer to the content of the article. 
+> * New equations on this webpage start from equation 38.
+
+```
+* Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
+* For equations that reference formulas within the paper (with numbers less than 38), please refer to the content of the article. 
+* New equations on this webpage start from equation 38.
+```
 
 <html>
   <head>
@@ -21,7 +27,7 @@ layout: default
       For images polluted by software noise, the extracted noise residual \(\widehat{\mathbf{K}}\) can be expressed as the sum of three components:
     </p>
     <p>
-      \[\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi},\]
+      \[\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi}, (38)\]
     </p>
     <p>
       where \(\mathbf{K}\), \(\mathbf{S}\), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients \(\alpha\) and \(\beta\) before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
@@ -43,7 +49,7 @@ layout: default
       \[\operatorname{CC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_R) = (\alpha_Q \mathbf{K}_{Qm} + \beta_Q \mathbf{S}_{Qm} + \xi_{Qm}) \odot (\alpha_R \mathbf{K}_{Rm} + \beta_R \mathbf{S}_{Rm} + \xi_{Rm})\]
     </p>
     <p>
-      \[= \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_{Q}\beta_{R} \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \mathbf{\varphi}_{QR},\]
+      \[= \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_{Q}\beta_{R} \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \mathbf{\varphi}_{QR}, (39)\]
     </p>
     <p>
       where \(\varphi_{QR}\) is a combination of multiple random noises. Specifically,
@@ -57,7 +63,7 @@ layout: default
     <p>
       \[+ \alpha_R \xi_{Qm} \odot \mathbf{K}_{Rm}
             + \beta_R \xi_{Qm} \odot \mathbf{S}_{Rm}
-            + \xi_{Qm} \odot \xi_{Rm}.\]
+            + \xi_{Qm} \odot \xi_{Rm}. (40)\]
     </p>
   </body>
 </html>
@@ -70,7 +76,7 @@ layout: default
       a new fingerprint \(\widehat{\mathbf{K}}_Z\), which is extracted from images of another device with the same model and post-processing software,
     </p>
     <p>
-      \[\widehat{\mathbf{K}}_Z = \alpha_Z \mathbf{K}_Z + \beta_Z \mathbf{S}_Z + \xi_Z.\]
+      \[\widehat{\mathbf{K}}_Z = \alpha_Z \mathbf{K}_Z + \beta_Z \mathbf{S}_Z + \xi_Z. (41)\]
     </p>
     <p>  
       FITS_CC can be expressed as follows,
@@ -84,14 +90,14 @@ layout: default
       = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
       - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}
-      +  \varphi_{QRZ},
+      +  \varphi_{QRZ}, (42)
       \]
     </p>
     <p>
       where
     </p>
     <p>
-      \[\varphi_{QRZ} = \varphi_{QR} + \varphi_{QZ} - \alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}.\]
+      \[\varphi_{QRZ} = \varphi_{QR} + \varphi_{QZ} - \alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}. (43)\]
     </p>
     <p>
       Please note that \(\mathbf{K}_{Qm}\) and \(\mathbf{K}_{Zm}\) are hardware fingerprints from different devices. Therefore \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is included in the combination of random noises \(\varphi_{QRZ}\). 
@@ -102,7 +108,7 @@ layout: default
       \operatorname{FITS\_CC_1} \approx
       \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.   (42)
+      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}. (44)
       \label{eq:CC_Sub_0}
       \end{equation}
     </p>
@@ -121,7 +127,7 @@ layout: default
       \operatorname{FITS\_CC_2} &= 
       \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)}
       \\ &= \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
-      {\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}.
+      {\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}. (45)
       \end{split}
       \end{equation}
     </p>
@@ -130,7 +136,7 @@ layout: default
     </p>
     <p>
       \begin{equation}
-      \operatorname{FITS\_CC_2} \approx \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}{\beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}.
+      \operatorname{FITS\_CC_2} \approx \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}{\beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}. (46)
       \end{equation}
     </p>
   </body>
@@ -140,13 +146,13 @@ layout: default
 <html>
   <body>
     <p>
-      The strength of hardware fingerprint \(\mathbf{K}\) and software noise \(\mathbf{S}\) is sensitive to picture resolution. If we resize the input pictures, the result of Equation (\ref{eq:CC_Sub}) is changed accordingly. Since the numerator and denominator are synchronously changed in Equation (\ref{eq:CC_Div}), the result remains stable.
+      The strength of hardware fingerprint \(\mathbf{K}\) and software noise \(\mathbf{S}\) is sensitive to picture resolution. If we resize the input pictures, the result of Equation (44) is changed accordingly. Since the numerator and denominator are synchronously changed in Equation (46), the result remains stable.
     </p>
   </body>
 </html>
 
 ## 2.Detailed explanation of FITS_NCC
-According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC as follows,
+According to the definition of NCC (Equation (6)), we can rewrite NCC as follows,
 <html>
   <body>
     <p>
@@ -155,7 +161,7 @@ According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC
         \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}
         {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}
        =\frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot K_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
-       {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}. 
+       {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}. (47)
       \end{equation}
     </p>
   </body>
@@ -172,7 +178,7 @@ The equation is given as follows,
         \\ = \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
                 {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|} - 
           \\ \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
-                {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
+                {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}. (48)
           \\ \
       \end{split}
       \end{equation}
@@ -187,7 +193,7 @@ The equation is given as follows,
               (\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}+ \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm})
         - \left\| \widehat{\mathbf{K}}_{Rm} \right\|
               \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}
-            {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
+            {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}. (49)
       \end{equation}
     </p>
   </body>
@@ -203,7 +209,7 @@ The equation is given as follows,
       \operatorname{FITS\_NCC_2} &= 
       \frac{\operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}{\operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)}
       \\ &= \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\| ( \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR})}
-      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| (\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ})}.
+      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| (\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ})}. (50)
       \end{split}
       \end{equation}
     </p>
@@ -213,7 +219,7 @@ The equation is given as follows,
     <p>
       \begin{equation}
           \operatorname{FITS\_NCC_2} \approx \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\|  \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}
-      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}.
+      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}. (51)
       \end{equation}
     </p>
   </body>
@@ -223,13 +229,13 @@ The equation is given as follows,
 <html>
   <body>
     <p>
-      In Equation (\ref{eq:NCC_Sub}), the result is relevant to \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), the noise residual strength of the picture, which may result in instability. Instead, Equation (\ref{eq:NCC_Div}) doesn't contain \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), and it isn't sensitive to the input picture's hardware fingerprint strength.
+      In Equation (49), the result is relevant to \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), the noise residual strength of the picture, which may result in instability. Instead, Equation (51) doesn't contain \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), and it isn't sensitive to the input picture's hardware fingerprint strength.
     </p>
   </body>
 </html>
 
 ### 3.Detailed explanation of FITS_PCE
-According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
+According to the definition of PCE (Equation (7)), we have:
 <html>
   <body>
     <!-- <p>
@@ -245,7 +251,7 @@ According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
       \begin{equation}
           \operatorname{PCE(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)} = 
             \frac{\operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}} 
-            = \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
+            = \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}. (52)
       \end{equation}
     </p>
   </body>
@@ -262,17 +268,17 @@ The equation is given as follows,
       \begin{equation}
       =\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}
       -
-      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}},
+      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}}, (53)
       \end{equation}
     </p>
     <p>
       where \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})\) and \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})\) are both random noises with similar strength, because the shifted fingerprints \(\mathbf{K}_R\) and \(\mathbf{K}_Z\) are not correlated with the camera fingerprint \(\mathbf{K}_Q\), and these three fingerprints have the same image resolution. 
-      Equation (\ref{eq:PCE_Sub0}) can be simplified as follows,
+      Equation (53) can be simplified as follows,
     </p>
     <p>
       \begin{equation}
       \operatorname{FITS\_PCE_1} \approx 
-      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2} - \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
+      \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2} - \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}. (54)
       \end{equation}
     </p>
   </body>
@@ -288,16 +294,16 @@ The equation can be written as follows,
       {\operatorname{PCE}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)} 
       =
       \frac{\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}}
-      {\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}}}
+      {\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}}} (55)
       \end{equation}
     </p>
     <p>
-      Because \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})\) and \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})\) are both random noises with similar strength. Equation (\ref{eq:PCE_Div0}) can be simplified as:
+      Because \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})\) and \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})\) are both random noises with similar strength. Equation (55) can be simplified as:
     </p>
     <p>
       \begin{equation}
         \operatorname{FITS\_PCE_2} \approx \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R,\mathbf{s}_{\text{peak}})^2}
-              {\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z,\mathbf{s}_{\text{peak}})^2}.
+              {\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z,\mathbf{s}_{\text{peak}})^2}. (56)
       \end{equation}
     </p>
   </body>
@@ -307,7 +313,7 @@ The equation can be written as follows,
 <html>
   <body>
     <p>
-      In Equation (\ref{eq:PCE_Sub}), the denominator may be influenced by the model of devices, which makes setting a certain threshold for multiple models a difficult task. There is no such problem in Equation (\ref{eq:PCE_Div}).
+      In Equation (54), the denominator may be influenced by the model of devices, which makes setting a certain threshold for multiple models a difficult task. There is no such problem in Equation (56).
     </p>
   </body>
 </html>
