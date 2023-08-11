@@ -18,10 +18,10 @@ layout: default
   \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 </p>
 </body>
-</html>
-
 
 when \(\widehat{\mathbf{K}}_Q\) is not \(\varphi_(QR)\) is a num \(\hat{XXX}\)
+
+</html>
 
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
