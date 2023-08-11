@@ -17,10 +17,10 @@ layout: default
     For images polluted by software noise, the extracted noise residual \(\widehat{\mathbf{K}}\) can be expressed as the sum of three components:
   </p>
   <p>
-    \(\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi},\)
+    \[\widehat{\mathbf{K}} = \alpha \mathbf{K} + \beta \mathbf{S} + \mathbf{\xi},\]
   </p>
   <p>
-    where \(\mathbf{K}), \(\mathbf{S}), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients $\alpha$ and $\beta$ before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
+    where \(\mathbf{K}\), \(\mathbf{S}\), and \(\mathbf{\xi}\) are hardware fingerprint, software noise, and other types of noise sources respectively. A fingerprint extracting algorithm cannot completely extract the fingerprints. Therefore, we add coefficients $\alpha$ and $\beta$ before \(\mathbf{K}\) and \(\mathbf{S}\) respectively.
   </p>
   <p>
     Please note that for the dot product of two matrices: \(mathbf{X} \odot \mathbf{Y} = \sum_{i=1}^{m}\sum_{j=1}^{n} \mathbf{X}[i,j] \mathbf{Y}[i,j]\). If \(\mathbf{X}) isn't correlative with \(\mathbf{Y}), the result behaves as random noise. Since the mean of random noise is statistically close to zero, it can be ignored.
