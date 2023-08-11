@@ -273,6 +273,50 @@ The equation is given as follows,
   </body>
 </html>
 
+### 3-2.Using Division to Calculate FITS_PCE
+The equation can be written as follows,
+<html>
+  <body>
+    <p>
+      \begin{equation}
+      \operatorname{FITS\_PCE_2} = \frac{\operatorname{PCE}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}
+      {\operatorname{PCE}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)} 
+      =
+      \frac{\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}}
+      {\frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s}\right)^{2}}}
+      \end{equation}
+    </p>
+    <p>
+      Because \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s})\) and \(\operatorname{CC}(\mathbf{K}_{Q}, \mathbf{K}_{Z}, \mathbf{s})\) are both random noises with similar strength. Equation (\ref{eq:PCE_Div0}) can be simplified as:
+    </p>
+    <p>
+      \begin{equation}
+        \operatorname{FITS\_PCE_2} \approx \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R,\mathbf{s}_{\text{peak}})^2}
+              {\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z,\mathbf{s}_{\text{peak}})^2}.
+      \end{equation}
+    </p>
+  </body>
+</html>
+
+### 3-3.Discussion
+<html>
+  <body>
+    <p>
+      In Equation (\ref{eq:PCE_Sub}), the denominator may be influenced by the model of devices, which makes setting a certain threshold for multiple models a difficult task. There is no such problem in Equation (\ref{eq:PCE_Div}).
+    </p>
+  </body>
+</html>
+
+### 4.Summary
+<html>
+  <body>
+    <p>
+      For CC, NCC and PCE algorithms, using subtraction to calculate FITS may result in fluctuation of  results, which may degrade the performance of our fingerprint matching algorithm. Instead, using division facilitates threshold choosing and enhances the stability.
+    </p>
+  </body>
+</html>
+
+
 ### 2-1.1111
 
 <html>
