@@ -123,17 +123,78 @@ layout: default
     <p>
       Because \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_Z\) are extracted from different devices, \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is random noise. Then, the FITS_CC can be simplified as follows,
     </p>
-  </body>
-</html>
-
-### 1-3.hahahalalalala
-<html>
-  <body>
     <p>
-1
+      \begin{equation}
+      \operatorname{FITS\_CC_2} \approx \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}{\beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}.
+      \end{equation}
     </p>
   </body>
 </html>
+
+### 1-3.Discussion
+<html>
+  <body>
+    <p>
+      The strength of hardware fingerprint \(\mathbf{K}\) and software noise \(\mathbf{S}\) is sensitive to picture resolution. If we resize the input pictures, the result of Equation (\ref{eq:CC_Sub}) is changed accordingly. Since the numerator and denominator are synchronously changed in Equation (\ref{eq:CC_Div}), the result remains stable.
+    </p>
+  </body>
+</html>
+
+## 2.Detailed explanation of FITS_NCC
+According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC as follows,
+<html>
+  <body>
+    <p>
+      According to the definition of NCC (Equation (\ref{eq:NCC})), we can rewrite NCC as follows,
+    </p>
+    <p>
+      \begin{equation}
+      \begin{split}
+        \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) &= 
+        \frac{\operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)}
+        {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}\\
+       &=\frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot K_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
+       {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|}. 
+      \end{split}
+      \end{equation}
+    </p>
+  </body>
+</html>
+
+### 2-1.Using Subtraction to calculate FITS_NCC
+
+<html>
+  <body>
+    <p>
+      The equation is given as follows,
+    </p>
+    <p>
+      \begin{equation}
+      \begin{split}
+        \operatorname{FITS\_NCC_1} =  \operatorname{NCC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) - \operatorname{NCC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_Z) 
+        \\ = \frac{\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R  \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \varphi_{QR}}
+                {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Rm} \right\|} - 
+          \\ \frac{\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z  \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}
+                {\left\| \widehat{\mathbf{K}}_{Qm} \right\| \left\| \widehat{\mathbf{K}}_{Zm} \right\|}.
+          \\ \
+      \end{split}
+      \end{equation}
+    </p>
+  </body>
+</html>
+
+
+
+### 2-1.1111
+
+<html>
+  <body>
+    <p>
+    1
+    </p>
+  </body>
+</html>
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
