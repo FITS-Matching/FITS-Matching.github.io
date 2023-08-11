@@ -71,13 +71,14 @@ layout: default
     </p>
     <p>
       \[\operatorname{FITS\_CC_1} = \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R) 
-      - \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z) $
-      \begin{equation}
+      - \operatorname{CC}(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_Z)
+    </p>
+    <p>
       = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
       + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
       - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}
       +  \varphi_{QRZ},
-      \end{equation}\]
+      \]
     </p>
     <p>
       where
