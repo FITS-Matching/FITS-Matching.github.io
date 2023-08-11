@@ -108,7 +108,7 @@ layout: default
 <html>
   <body>
     <p>
-      FITS\_CC is the ratio of two CCs:
+      FITS_CC is the ratio of two CCs:
     </p>
     <p>
       \begin{equation}
@@ -119,6 +119,9 @@ layout: default
       {\alpha_Q \alpha_Z \mathbf{K}_{Qm} \odot \mathbf{K}_{Zm} + \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm} + \varphi_{QZ}}.
       \end{split}
       \end{equation}
+    </p>
+    <p>
+      Because \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_Z\) are extracted from different devices, \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is random noise. Then, the FITS_CC can be simplified as follows,
     </p>
   </body>
 </html>
