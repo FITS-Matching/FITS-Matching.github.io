@@ -25,19 +25,20 @@ layout: default
   <p>
     Please note that for the dot product of two matrices: \(\mathbf{X} \odot \mathbf{Y} = \sum_{i=1}^{m}\sum_{j=1}^{n} \mathbf{X}[i,j] \mathbf{Y}[i,j]\). If \(\mathbf{X}\) isn't correlative with \(\mathbf{Y}\), the result behaves as random noise. Since the mean of random noise is statistically close to zero, it can be ignored.
   </p>
-
+</body>
   # Detailed explanation of \(\mathbf{FITS\_CC}\)
-  <p>
-    According to Equation (\ref{eq:CC}), for a pair of estimated fingerprints \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_R\), the cross correlation (CC) between them can be expressed as follows,
-  </p>
-  <p>
-  \[\operatorname{CC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_R) = (\alpha_Q \mathbf{K}_{Qm} + \beta_Q \mathbf{S}_{Qm} + \xi_{Qm}) \odot (\alpha_R \mathbf{K}_{Rm} + \beta_R \mathbf{S}_{Rm} + \xi_{Rm})\\
-  = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_{Q}\beta_{R} \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \mathbf{\varphi}_{QR},\]
-  </p>
-  <p>
-    where \(\varphi_{QR}\) is a combination of multiple random noises. Specifically,
-  </p>
-  <!-- <p> -->
+  <body>
+    <p>
+      According to Equation (\ref{eq:CC}), for a pair of estimated fingerprints \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_R\), the cross correlation (CC) between them can be expressed as follows,
+    </p>
+    <p>
+    \[\operatorname{CC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_R) = (\alpha_Q \mathbf{K}_{Qm} + \beta_Q \mathbf{S}_{Qm} + \xi_{Qm}) \odot (\alpha_R \mathbf{K}_{Rm} + \beta_R \mathbf{S}_{Rm} + \xi_{Rm})\\
+    = \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_{Q}\beta_{R} \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm} + \mathbf{\varphi}_{QR},\]
+    </p>
+    <p>
+      where \(\varphi_{QR}\) is a combination of multiple random noises. Specifically,
+    </p>
+    <!-- <p> -->
   </body>
 </html>
 
