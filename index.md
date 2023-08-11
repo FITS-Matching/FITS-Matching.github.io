@@ -205,14 +205,62 @@ The equation is given as follows,
     <p>
       After ignoring \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) and other random noises, we then have:
     </p>
+    <p>
+      \begin{equation}
+          \operatorname{FITS\_NCC_2} \approx \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\|  \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}
+      {\left\| \widehat{\mathbf{K}}_{Rm} \right\| \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}.
+      \end{equation}
+    </p>
   </body>
 </html>
+
+### 2-3.Discussion
+<html>
+  <body>
+    <p>
+      In Equation (\ref{eq:NCC_Sub}), the result is relevant to \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), the noise residual strength of the picture, which may result in instability. Instead, Equation (\ref{eq:NCC_Div}) doesn't contain \(\left\| \widehat{\mathbf{K}}_{Qm} \right\|\), and it isn't sensitive to the input picture's hardware fingerprint strength.
+    </p>
+  </body>
+</html>
+
+### 3.Detailed explanation of FITS_PCE
+According to the definition of PCE (Equation (\ref{eq:PCE})), we have:
+<html>
+  <body>
+    <p>
+      \begin{equation}
+      \begin{split}
+          \operatorname{PCE(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)} &= 
+            \frac{\operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}} \\
+            &= \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
+      \end{split}
+      \end{equation}
+    </p>
+    <p>
+      \begin{equation}
+          \operatorname{PCE(\widehat{\mathbf{K}}_Q,\widehat{\mathbf{K}}_R)} = 
+            \frac{\operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{NCC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}} 
+            = \frac{\operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}_{\text {peak}}\right)^{2}}{\frac{1}{m n-|\mathcal{N}|} \sum_{\mathbf{s}, \mathbf{s} \notin \mathcal{N}} \operatorname{CC}\left(\mathbf{K}_{Q}, \mathbf{K}_{R}, \mathbf{s}\right)^{2}}.
+      \end{equation}
+    </p>
+    <p>
+    1
+    </p>
+  </body>
+</html>
+
 
 
 ### 2-1.1111
 
 <html>
   <body>
+    <p>
+    1
+    </p>
+    <p>
+    1
+    </p>
     <p>
     1
     </p>
