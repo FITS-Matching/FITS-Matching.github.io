@@ -21,7 +21,7 @@ layout: default
 </html>
 
 
-when \(\hat{X}\), \(\hat{XX}\) is a num \(\longhat{XXX}\)
+when \(\widehat{\mathbf{K}}_Q\) is not \(\varphi_(QR)\) is a num \(\hat{XXX}\)
 
 # About FITS-CC algorithm
 the 1st setp is ...... **K** and **$\hat{x}$, $\tilde{x}$**, $\vec{x}$
