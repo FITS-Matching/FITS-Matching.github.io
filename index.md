@@ -2,6 +2,10 @@
 layout: default
 ---
 
+> Please note that the indices of the equations below are based on the conference paper "FITS: Matching Camera Fingerprints Subject to Software Noise Pollution" of ACM CCS 2023. 
+> For equations that reference formulas within the paper (with numbers less than 39), please refer to the content of the article. 
+> New equations on this webpage start from equation 39.
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -28,12 +32,12 @@ layout: default
   </body>
 </html>
 
-## 1.Detailed explanation of FITS_CC
 
+## 1.Detailed explanation of FITS_CC
 <html>
   <body>
     <p>
-      According to Equation (\ref{eq:CC}), for a pair of estimated fingerprints \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_R\), the cross correlation (CC) between them can be expressed as follows,
+      According to Equation (5), for a pair of estimated fingerprints \(\widehat{\mathbf{K}}_Q\) and \(\widehat{\mathbf{K}}_R\), the cross correlation (CC) between them can be expressed as follows,
     </p>
     <p>
       \[\operatorname{CC}(\widehat{\mathbf{K}}_Q, \widehat{\mathbf{K}}_R) = (\alpha_Q \mathbf{K}_{Qm} + \beta_Q \mathbf{S}_{Qm} + \xi_{Qm}) \odot (\alpha_R \mathbf{K}_{Rm} + \beta_R \mathbf{S}_{Rm} + \xi_{Rm})\]
@@ -91,7 +95,7 @@ layout: default
     </p>
     <p>
       Please note that \(\mathbf{K}_{Qm}\) and \(\mathbf{K}_{Zm}\) are hardware fingerprints from different devices. Therefore \(\mathbf{K}_{Qm} \odot \mathbf{K}_{Zm}\) is included in the combination of random noises \(\varphi_{QRZ}\). 
-      Since the mean of random noise \(\varphi_{QRZ}\) is statistically close to zero, we ignore \(\varphi_{QRZ}\) and Equation (\ref{eq:CC_Sub_0}) can be further simplified as: \eqref{eq:CC_Sub_0}
+      Since the mean of random noise \(\varphi_{QRZ}\) is statistically close to zero, we ignore \(\varphi_{QRZ}\) and Equation (42) can be further simplified as:
     </p>
     <p>
       \begin{equation}
@@ -102,22 +106,6 @@ layout: default
       \label{eq:CC_Sub_0}
       \end{equation}
     </p>
-    <div class="equation">
-      \(\begin{equation}
-      \operatorname{FITS\_CC_1} \approx
-      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
-      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-      \end{equation}\)
-    </div>
-    <div class="equation">
-      \(\begin{equation}
-      \operatorname{FITS\_CC_1} \approx
-      \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm}
-      + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}
-      - \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}.
-      \end{equation}\)
-    </div>
   </body>
 </html>
 
@@ -472,7 +460,7 @@ The final element.
 ```
 
 
-<script>
+<!-- <script>
   window.onload = function() {
     var equations = document.querySelectorAll('.equation');
     equations.forEach(function(eq, index) {
@@ -481,4 +469,4 @@ The final element.
       eq.innerHTML = '<div class="equation">' + equationText + '</div><span class="equation-number">(' + equationNumber + ')</span>';
     });
   };
-</script>
+</script> -->
