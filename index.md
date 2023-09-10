@@ -219,7 +219,7 @@ The equation is given as follows,
     </p>
     <p>
       \begin{equation}
-          \operatorname{FITS\_NCC_2} \approx \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\|  \alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm}}
+          \operatorname{FITS\_NCC_2} \approx \frac{\left\| \widehat{\mathbf{K}}_{Zm}\right\|  (\alpha_Q \alpha_R \mathbf{K}_{Qm} \odot \mathbf{K}_{Rm} + \beta_Q \beta_R \mathbf{S}_{Qm} \odot \mathbf{S}_{Rm})}
       {\left\| \widehat{\mathbf{K}}_{Rm} \right\| \beta_Q \beta_Z \mathbf{S}_{Qm} \odot \mathbf{S}_{Zm}}. (51)
       \end{equation}
     </p>
